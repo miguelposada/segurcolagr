@@ -1,0 +1,98 @@
+
+    <form name="form1"  class="guardar_form" id="form1" style="border:1px solid" method="post">
+        <table border="0" align="center">
+            <tr><td><img src="../librerias/imagenes/logo 1.jpg" ><img src="../librerias/imagenes/logo 2.jpg" ></td></tr> 
+            <tr><td valign="middle" align="center" colspan="6"><b>CLINICA DE PEQUE&NtildeOS ANIMALES<b></td></tr>
+                            <tr><td valign="middle" align="center" colspan="6">REGISTRO INGRESO CONSULTA EXTERNA</td></tr>
+                            <tr><td valign="middle" align="center" colspan="6"> </td></tr>
+                            <tr>
+                                <td align="center">
+                                    <table>
+                                        <tr>
+                                            <td align="right">LP2</td><td><input type="text" name="pac_lp2" readonly="readonly" id="pac_lp2" class="" size="8"/></td>
+                                            <td align="center">NOMBRE</td><td align="center" colspan="2"><input type="text" name="pac_nom" id="pac_nom" class="" size="30"/></td>
+                                            <td align="center">GENERO M<input type="radio" name="pac_gen" id="pac_gen" class="" value="M" />
+                                                H<input type="radio" name="pac_gen" id="pac_gen" class="" value="H" /></td>
+                                        </tr>
+                                        <tr>	
+                                            <td align="center">FECHA DE <BR />INGRESO</td>    
+                                            <td><input type="text" name="pac_fec_ing" id="pac_fec_ing" size="12" onclick="scwShow(this, event);"><img onclick="scwShow(scwID('pac_fec_ing'),event);" alt="Click Aca" title="Click Aca" src="../librerias/js/calendar/calendar.gif"></td>                                            
+                                            <td align="center">MICRO CHIP</td>    <td><input type="text"  name="pac_mic" id="pac_mic"class="" size="12"/></td>
+                                            <td align="center">H. CLINCICA <BR />LA PERLA</td><td><input type="text" name="pac_hxc" id="pac_hxc" class=""/></td></tr>
+
+                                        <tr><td align="center">ESPECIE</td><td align="center"><input type="text" name="pac_tip_esp" id="pac_tip_esp" class="" size="30"/></td>
+                                            <td align="center">RAZA</td><td align="center"><input type="text" name="pac_tip_raz" id="pac_tip_raz" class="" size="30"/></td>
+                                    </table>
+                                </td>
+                            </tr>
+                            </table>
+                            <br />
+                            <br />
+                            <table border="0" align="center">
+                                <tr>                                   
+                                    <td>CIRUG&Iacute;A <input type="text" name="pac_tip_cir" id="pac_tip_cir" class="" size="30"/><BR /><textarea name="pac_cir_obs" cols="35" rows="5" id="pac_cir_obs" ></textarea></td>
+
+                                    <td>
+                                        <table>
+                                            <tr>
+                                             <td>FECHA CIRUGIA</td>    
+                                             <td><input type="text" name="pac_fec_cir" id="pac_fec_cir" size="12" onclick="scwShow(this, event);"><img onclick="scwShow(scwID('pac_fec_cir'),event);" alt="Click Aca" title="Click Aca"
+                                             src="../librerias/js/calendar/calendar.gif"></td>                                             
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="middle">ECOGRAF&Iacute;A</td>
+                                                <td align="center" valign="middle">si<input type="radio" name="pac_eco" id="pac_eco" class="" value="SI" />no<input type="radio" name="pac_eco" id="pac_eco" class="" value="NO" /></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                             <td>FECHA ECOGRAFIA</td>    
+                                             <td><input type="text" name="pac_fec_eco" id="pac_fec_eco" size="12" onclick="scwShow(this, event);"><img onclick="scwShow(scwID('pac_fec_eco'),event);" alt="Click Aca" title="Click Aca"
+                                             src="../librerias/js/calendar/calendar.gif"></td>                                             
+                                            </tr>
+                                        </table>
+                                    </td>                                    
+
+                                </tr>
+                            </table>
+                            <br />
+                            <table border="0" align="center">
+                                <tr>
+                                    <td>RESCATE</td><td><textarea rows="2" cols="10" id="pac_res" name="pac_res"></textarea></td>
+                                    <td rowspan="3">EXAMENES DE LABORATORIO<br /><textarea name="pac_exa" id="pac_exa" cols="25" rows="8"></textarea></td><td>FECHA DE <BR />EXAMENES MEDICOS</td>
+                                    <td><input type="text" name="pac_fec_exa" id="pac_fec_exa" class="" onclick="scwShow(this, event);"  size="12"/><img src="../librerias/js/calendar/calendar.gif" title="Click Aca" alt="Click Aca" onclick="scwShow(scwID('pac_fec_exa'),event);"></td>                                   
+                                </tr>
+                                <tr>
+                                    <td>ACTA</td>
+                                    <td><input type="text" size="10" class="" id="pac_act" name="pac_act">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>HOSPITAL</td><td><input type="text" name="pac_hos" id="pac_hos" class="" size="5"/></td>
+                                    <td>CONSULTA<BR />ESPECIALIZADA</td><td><input type="text" name="pac_con" id="pac_con" class="" size="30"/></td>
+                                </tr>
+                                <tr>
+                                    <td></td><td>TIPO CONSULTA ESP.</td>
+                                    <td colspan="2"><textarea name="pac_con_obs" id="pac_con_obs" cols="35" rows="5"></textarea></td>
+                                </tr>
+                            </table>
+                            <BR />
+                            <table border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="middle">FECHA DE ALTA</td><td><input type="text" name="pac_fec_alt" id="pac_fec_alt" size="12"  onclick="scwShow(this, event);"><img onclick="scwShow(scwID('pac_fec_alt'),event);" alt="Click Aca" title="Click Aca" src="../librerias/js/calendar/calendar.gif"></td>
+                                     
+                                    <td align="left">DIAS HOSPITAL</td><td><input type="text" size="5" name="pac_dia" readonly="" id="pac_dia" class=""  /></td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top">OBSERVACIONES</td><td colspan="3"><textarea name="pac_obs" id="pac_obs" cols="40" rows="5"  class='' value=''></textarea></td>
+                                </tr>
+                                 <tr>
+                                     <td align="left">Estado</td><td><input type="text" size="5" name="pac_est" id="pac_est" class=""  /></td>
+                                 </tr>
+                            </table> 
+                            <center> <br />
+                                <br />                                              
+                                <input type="button" value='Guardar' onclick="GuardarHistoriaAnimal();" class='boton' id="button">
+
+                                <div id="resultadoGrid"></div>
+                            </center>
+                            </form>
